@@ -1,4 +1,4 @@
-export const navLinks = [
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -25,7 +25,7 @@ export const navLinks = [
   },
 ];
 
-export const profile = {
+const profile = {
   name: "Muditha Batuwangala",
   roles: ["Software Engineer", "Full Stack Developer", "AI Researcher"],
   description:
@@ -39,3 +39,5 @@ export const profile = {
     facebook: "",
   },
 };
+
+export { navLinks, profile };
