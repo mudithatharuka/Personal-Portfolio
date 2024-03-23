@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "rgba(var(--primary))",
         background: "rgba(var(--background))",
         altBackground: "rgba(var(--altBackground))",
         footerBackground: "rgba(var(--footerBackground))",
@@ -15,6 +16,7 @@ export default {
         // "cta-active": "rgba(var(--cta-active))",
         // "cta-text": "rgba(var(--cta-text))",
         // grape: "rgba(var(--grape))",--txt-primary: 242, 245, 247;
+        txtMain: "rgba(var(--txtMain))",
         txtPrimary: "rgba(var(--txtPrimary))",
         txtSecondary: "rgba(var(--txtSecondary))",
         txtTertiary: "rgba(var(--txtTertiary))",

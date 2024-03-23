@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 .dark {
-  --primary: 76, 120, 230;
+  /* --primary: 76, 120, 230; */
+  /* --primary: 34, 173, 194; */
+  --primary: 99, 226, 255;
 
   /* --gradDblue:;
   --gradLblue:;
@@ -20,6 +22,7 @@
   --copy-primary: 23, 23, 23;
   --copy-secondary: 115, 115, 115; */
 
+  --txtMain: 255, 255, 255;
   --txtPrimary: 242, 243, 244;
   --txt-secondary: 200, 207, 216;
   --txtTertiary: 98, 105, 112;
