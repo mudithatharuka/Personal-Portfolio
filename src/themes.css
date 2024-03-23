@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 .dark {
-  --primary: 76, 120, 230;
+  /* --primary: 76, 120, 230; */
+  /* --primary: 34, 173, 194; */
+  --primary: 99, 226, 255;
 
-  --background: 34, 42, 53;
+  /* --gradDblue:;
+  --gradLblue:;
+   */
+  /* --background: 28, 33, 41; */
+  --background: 28, 28, 39;
+  /* --background: 34, 42, 53; */
   --altBackground: 25, 33, 44;
   --footerBackground: 0, 17, 45;
 
@@ -15,7 +22,8 @@
   --copy-primary: 23, 23, 23;
   --copy-secondary: 115, 115, 115; */
 
-  --txtPrimary: 242, 245, 247;
+  --txtMain: 255, 255, 255;
+  --txtPrimary: 242, 243, 244;
   --txt-secondary: 200, 207, 216;
   --txtTertiary: 98, 105, 112;
   --txtQuaternary: 87, 92, 102;
@@ -24,7 +32,7 @@
   --cta-active: 124, 58, 237;
   --cta-text: 255, 255, 255; */
 
-  background: rgba(var(--background));
+  /* background: rgba(var(--background)); */
 }
 
 /* .light {
