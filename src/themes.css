@@ -33,6 +33,7 @@
   --cta-text: 255, 255, 255; */
 
   /* background: rgba(var(--background)); */
+  --clipPath: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 }
 
 /* .light {
