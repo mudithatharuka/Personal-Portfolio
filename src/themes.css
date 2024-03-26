@@ -24,15 +24,19 @@
 
   --txtMain: 255, 255, 255;
   --txtPrimary: 242, 243, 244;
-  --txt-secondary: 200, 207, 216;
+  --txtSecondary: 200, 207, 216;
   --txtTertiary: 98, 105, 112;
   --txtQuaternary: 87, 92, 102;
+
+  --buttonGradient1: 0, 132, 255, 1;
+  --buttonGradient2: 0, 225, 255, 1;
 
   /* --cta: 139, 92, 246;
   --cta-active: 124, 58, 237;
   --cta-text: 255, 255, 255; */
 
   /* background: rgba(var(--background)); */
+  --clipPath: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 }
 
 /* .light {

@@ -25,5 +25,16 @@ export default {
       textColor: {},
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".button-gradient": {
+          background: `rgba(var(--buttonGradient1))`,
+          background: `linear-gradient(225deg, rgba(var(--buttonGradient1)) 0%, rgba(var(--buttonGradient2)) 100%)`,
+          background: `-moz-linear-gradient(225deg, rgba(var(--buttonGradient1)) 0%, rgba(var(--buttonGradient2)) 100%)`,
+          background: `-webkit-linear-gradient(225deg, rgba(var(--buttonGradient1)) 0%, rgba(var(--buttonGradient2)) 100%)`,
+        },
+      });
+    },
+  ],
 };
