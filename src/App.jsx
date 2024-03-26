@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./themes.css";
 import { useEffect } from "react";
+import Hero from "./components/Hero";
 
 const App = () => {
   useEffect(() => {
@@ -24,9 +25,12 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Navbar />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+      <Hero />
+    </>
   );
 };
 
