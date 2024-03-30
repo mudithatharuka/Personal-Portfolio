@@ -4,6 +4,9 @@ import { styles } from "../styles";
 import { profile } from "../constants/data";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../assets/New.png";
+import { motion } from "framer-motion";
+import SectionWrapper from "../hoc/SectionWrapper";
+import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
@@ -16,7 +19,10 @@ const Hero = () => {
           <div className="absolute flex justify-end md:right-0  overflow-hidden w-full h-full max-w-[450px] md:max-w-[500px] lg:max-w-max">
             <HeroBgAnimation />
           </div>
-          <div className="w-full z-10 text-center md:text-left bg-background pt-4 pb-4">
+          <motion.div
+            variants={slideIn("left", "tween", 0.2, 1)}
+            className="w-full z-10 text-center md:text-left bg-background pt-4 pb-4"
+          >
             <p className="font-bold text-txtPrimary mb-2 text-[30px] sm:text-[40px] lg:text-[50px] leading-[38px] sm:leading-[48px] lg:leading-[68px]">
               Hi, I am
               <br />
@@ -51,18 +57,21 @@ const Hero = () => {
                 Check Resume
               </button>
             </div>
-          </div>
-          <div className="w-full flex mt-6 mb-6 justify-center z-10">
+          </motion.div>
+          <motion.div
+            variants={slideIn("right", "tween", 0.2, 1)}
+            className="w-full flex mt-6 mb-6 justify-center z-10"
+          >
             <img
               src={HeroImg}
               alt="Hero Image"
               className="w-full h-full max-w-[280px] md:max-w-[400px] rounded-full border-[2px] border-primary"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "");
