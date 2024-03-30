@@ -40,7 +40,7 @@ const profile = {
   },
 };
 
-export const skills = [
+const skills = [
   {
     title: "Frontend",
     skills: [
