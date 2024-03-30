@@ -31,6 +31,11 @@
   --buttonGradient1: 0, 132, 255, 1;
   --buttonGradient2: 0, 225, 255, 1;
 
+  --gradientColor1: 46, 49, 146, 0.15;
+  --gradientColor2: 201, 32, 184, 0;
+  --gradientColor3: 0, 70, 209, 0;
+  --gradientColor4: 36, 178, 190, 0.15;
+
   /* --cta: 139, 92, 246;
   --cta-active: 124, 58, 237;
   --cta-text: 255, 255, 255; */
