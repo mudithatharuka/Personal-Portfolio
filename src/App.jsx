@@ -31,7 +31,7 @@ const App = () => {
         <Navbar />
       </BrowserRouter>
       <Hero />
-      <div className="gradient-wrapper clip-path-gradient ">
+      <div className="gradient-wrapper bg-background clip-path-gradient ">
         <Skills />
       </div>
     </>

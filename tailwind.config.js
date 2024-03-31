@@ -21,6 +21,7 @@ export default {
         txtSecondary: "rgba(var(--txtSecondary))",
         txtTertiary: "rgba(var(--txtTertiary))",
         txtQuaternary: "rgba(var(--txtQuaternary))",
+        card: "rgba(var(--card))",
       },
       textColor: {},
     },
