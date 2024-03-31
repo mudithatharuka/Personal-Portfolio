@@ -51,7 +51,7 @@ const skills = [
       {
         name: "CSS",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+          "https://www.logolynx.com/images/logolynx/s_6e/6e6e1283cd55308a55b9eae8197b5e9b.png",
       },
       {
         name: "JavaScript",
@@ -68,22 +68,24 @@ const skills = [
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
+      // {
+      //   name: "Bootstrap",
+      //   image:
+      //     "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+      // },
       {
         name: "Tailwind",
-        image: "",
+        image:
+          "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png",
       },
       {
         name: "Material UI",
-        image: "",
+        image: "https://www.pngrepo.com/download/354048/material-ui.png",
       },
       {
         name: "Chakra UI",
-        image: "",
+        image:
+          "https://www.jeffy-evangelista.tech/assets/chakra-ui-08af548d.png",
       },
     ],
   },
@@ -92,31 +94,36 @@ const skills = [
     skills: [
       {
         name: "Java",
-        image: "",
+        image:
+          "https://www.educloud.academy/_amplify/image?url=/images/frameworks/java.png&w=320&q=100",
       },
       {
         name: "C",
-        image: "",
+        image:
+          "https://career.fpt-software.com/wp-content/uploads/2020/07/herstellerkat_c-programmierung.png",
       },
       {
         name: "C#",
-        image: "",
+        image: "https://iconape.com/wp-content/png_logo_vector/c.png",
       },
       {
         name: "PHP",
-        image: "",
+        image: "https://pngimg.com/uploads/php/php_PNG43.png",
       },
       {
         name: "TypeScript",
-        image: "",
+        image:
+          "https://cdn.icon-icons.com/icons2/2415/PNG/512/typescript_plain_logo_icon_146316.png",
       },
       {
         name: "Node Js",
-        image: "https://nodejs.org/static/images/logo.svg",
+        image:
+          "https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png",
       },
       {
         name: "Express Js",
-        image: "",
+        image:
+          "https://www.britwise.com/assets/imgs/meanstack-development/expressjslogo.png",
       },
       {
         name: "Python",
@@ -131,30 +138,32 @@ const skills = [
       {
         name: "Git",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+          "https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png",
       },
       {
         name: "GitHub",
         image:
-          "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+          "https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png",
       },
       {
         name: "BitBucket",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
+          "https://www.axonius.com/hubfs/Adapter%20Logos/bitbucket%20logo.png#keepProtocol",
       },
       {
         name: "Docker",
         image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+          "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-1024.png",
       },
       {
         name: "AWS",
-        image: "",
+        image:
+          "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
       },
       {
         name: "Azure",
-        image: "",
+        image:
+          "https://indiciatraining.com/wp-content/uploads/2019/10/azure_logo_transparent-2.png",
       },
     ],
   },
@@ -163,23 +172,27 @@ const skills = [
     skills: [
       {
         name: "NumPy",
-        image: "",
+        image: "https://www.pngrepo.com/download/373938/numpy.png",
       },
       {
         name: "Pandas",
-        image: "",
+        image:
+          "https://www.fireblazeaischool.in/blogs/wp-content/uploads/2020/06/Pandas.png",
       },
       {
         name: "PyTorch",
-        image: "",
+        image:
+          "https://iconape.com/wp-content/files/cx/351981/svg/pytorch-seeklogo.com.svg",
       },
       {
         name: "TensorFlow",
-        image: "",
+        image:
+          "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png",
       },
       {
         name: "Google Colab",
-        image: "",
+        image:
+          "https://www.toolassistant.com/wp-content/uploads/2023/01/639ac31ba9624303044a727c_63996e8028a4d13366cc0117_colab_favicon_256px-600x600.png",
       },
     ],
   },
@@ -188,17 +201,17 @@ const skills = [
     skills: [
       {
         name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        image: "https://pngimg.com/uploads/mysql/mysql_PNG23.png",
       },
       {
         name: "SQL Server",
-        image: "",
+        image:
+          "https://www.freeiconspng.com/uploads/sql-server-icon-png-28.png",
       },
       {
         name: "MongoDB",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
       },
       {
         name: "Firebase",
@@ -212,28 +225,31 @@ const skills = [
       {
         name: "VS Code",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+          "https://static-00.iconduck.com/assets.00/file-type-vscode-icon-512x508-376y62ux.png",
       },
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://149510500.v2.pressablecdn.com/wp-content/uploads/2021/05/Postman-removebg-preview.png",
       },
       {
         name: "Linux",
-        image: "",
+        image:
+          "https://www.pngall.com/wp-content/uploads/5/Linux-Logo-PNG-Download-Image.png",
       },
       {
         name: "Jira",
-        image: "",
+        image: "https://clipground.com/images/jira-logo-clipart-2.png",
       },
       {
         name: "Confluence",
-        image: "",
+        image:
+          "https://www.dxtr.co.uk/wp-content/uploads/2020/05/confluence-logo.png",
       },
       {
         name: "REST Api",
-        image: "",
+        image:
+          "https://icon-library.com/images/rest-api-icon/rest-api-icon-26.jpg",
       },
     ],
   },
