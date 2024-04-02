@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import "./themes.css";
 import { useEffect } from "react";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,9 @@ const App = () => {
         <Navbar />
       </BrowserRouter>
       <Hero />
+      <div className="gradient-wrapper bg-background clip-path-gradient ">
+        <Skills />
+      </div>
     </>
   );
 };
