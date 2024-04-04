@@ -318,6 +318,7 @@ const experiences = [
   {
     title: "Full Stack Developer - Part-Time",
     companyName: "Elephant Hive Limited",
+    location: "Dublin, Ireland | (Remote)",
     // icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jun 2022",
