@@ -15,6 +15,7 @@
   /* --background: 34, 42, 53; */
   --altBackground: 25, 33, 44;
   --footerBackground: 0, 17, 45;
+  --cardBackground1: 15, 23, 42;
   --cardBackground2: 28, 28, 39, 255;
 
   /* --border: 212, 212, 212; */
@@ -36,6 +37,8 @@
   --gradientColor2: 201, 32, 184, 0;
   --gradientColor3: 0, 70, 209, 0;
   --gradientColor4: 36, 178, 190, 0.15;
+
+  --boxShadow1: 23, 92, 230, 0.25;
 
   --card: 23, 23, 33;
 
