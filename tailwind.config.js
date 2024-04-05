@@ -22,6 +22,9 @@ export default {
         txtTertiary: "rgba(var(--txtTertiary))",
         txtQuaternary: "rgba(var(--txtQuaternary))",
         card: "rgba(var(--card))",
+        cardBackground1: "rgba(var(--cardBackground1))",
+        cardBackground2: "rgba(var(--cardBackground2))",
+        boxShadow1: "rgba(var(--boxShadow1))",
       },
       textColor: {},
     },
@@ -38,6 +41,9 @@ export default {
         ".gradient-wrapper": {
           background: `linear-gradient(38.73deg, rgba(var(--gradientColor1)) 0%, rgba(var(--gradientColor2)) 50%),
                        linear-gradient(141.27deg, rgba(var(--gradientColor3)) 50%, rgba(var(--gradientColor4)) 100%)`,
+        },
+        ".card-gradient-1": {
+          border: `1px solid linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1`,
         },
       });
     },
