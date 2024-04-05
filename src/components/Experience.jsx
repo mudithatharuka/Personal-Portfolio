@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { experiences } from "../constants/data";
 import SectionWrapper from "../hoc/SectionWrapper";
@@ -11,10 +11,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import HeroImg from "../assets/react.svg";
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, isOneCol }) => {
   return (
     <VerticalTimelineElement
-      date={experience?.date}
+      date={isOneCol ? "" : experience?.date}
       contentStyle={{
         background: "transparent",
         color: "rgba(var(--txtPrimary))",
@@ -43,10 +43,16 @@ const ExperienceCard = ({ experience }) => {
           {experience?.title}
         </h3>
         <h4 className="font-medium text-[12px] text-txtSecondary md:text-[14px]">
-          {experience?.companyName}&nbsp;&nbsp;|&nbsp;&nbsp;
-          <span>{experience?.location}</span>
+          {experience?.companyName}
         </h4>
-        <h4 className="font-normal text-[10px] text-txtSecondary md:text-[12px] md:hidden">
+        <h4 className="font-normal text-[11px] text-txtSecondary md:text-[13px]">
+          {experience?.location}
+        </h4>
+        <h4
+          className={`font-normal text-[10px] text-txtSecondary md:text-[12px] ${
+            isOneCol ? "block" : "hidden"
+          }`}
+        >
           {experience?.date}
         </h4>
       </div>
@@ -65,6 +71,21 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [isOneCol, setIsOneCol] = useState(false); // Initialize as false for OneCol
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsOneCol(window.innerWidth < 1170); // Adjust the breakpoint as needed
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className={`${styles.paddingX} ${styles.paddingY} w-full mx-auto`}>
       <div className="max-w-7xl mx-auto">
@@ -75,12 +96,13 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-col">
+        <div className={isOneCol ? "mr-[11%] md:ml-[7.5%] md:mr-[14.5%]" : ""}>
           <VerticalTimeline>
             {experiences?.map((experience, index) => (
               <ExperienceCard
                 key={`experience-${index}`}
                 experience={experience}
+                isOneCol={isOneCol}
               />
             ))}
           </VerticalTimeline>

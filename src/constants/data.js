@@ -259,7 +259,7 @@ const experiences = [
   {
     title: "Junior Software Engineer",
     companyName: "WIA Systems Inc.",
-    location: "Colombo, Sri Lanka | (Remote)",
+    location: "Colombo, Sri Lanka | Remote",
     // icon: starbucks,
     iconBg: "#383E56",
     date: "Mar 2023 - Present",
@@ -288,7 +288,7 @@ const experiences = [
   {
     title: "Full Stack Developer - Intern",
     companyName: "Elephant Hive Limited",
-    location: "Dublin, Ireland | (Remote)",
+    location: "Dublin, Ireland | Remote",
     // icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jun 2022 - Dec 2022",
@@ -316,9 +316,9 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer - Part-Time",
+    title: "Full Stack Developer - Part Time",
     companyName: "Elephant Hive Limited",
-    location: "Dublin, Ireland | (Remote)",
+    location: "Dublin, Ireland | Remote",
     // icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jun 2022",
