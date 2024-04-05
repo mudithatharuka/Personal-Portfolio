@@ -350,4 +350,6 @@ const experiences = [
   },
 ];
 
-export { navLinks, profile, skills, experiences };
+const projects = [];
+
+export { navLinks, profile, skills, experiences, projects };

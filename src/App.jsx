@@ -1,10 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
+import {
+  navLinks,
+  profile,
+  skills,
+  experiences,
+  projects,
+} from "./constants/data";
 import Navbar from "./components/Navbar";
 import "./themes.css";
 import { useEffect } from "react";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 const App = () => {
   useEffect(() => {
@@ -27,16 +35,17 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <div className="bg-background">
       <BrowserRouter>
-        <Navbar />
+        <Navbar navLinks={navLinks} />
       </BrowserRouter>
-      <Hero />
+      <Hero profile={profile} />
       <div className="gradient-wrapper bg-background clip-path-gradient">
-        <Skills />
-        <Experience />
+        <Skills skills={skills} />
+        <Experience experiences={experiences} />
       </div>
-    </>
+      <Projects projects={projects} />
+    </div>
   );
 };
 
