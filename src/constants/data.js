@@ -471,6 +471,12 @@ const projects = [
         linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
         github: "https://github.com/mudithatharuka",
       },
+      {
+        name: "Muditha Batuwangala",
+        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
+        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
+        github: "https://github.com/mudithatharuka",
+      },
     ],
   },
   {
@@ -545,6 +551,12 @@ const projects = [
     source_code_url: "https://github.com/mudithatharuka/TripplinCarRent",
     live_preview_url: "",
     members: [
+      {
+        name: "Muditha Batuwangala",
+        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
+        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
+        github: "https://github.com/mudithatharuka",
+      },
       {
         name: "Muditha Batuwangala",
         img: "https://avatars.githubusercontent.com/u/81775289?v=4",
