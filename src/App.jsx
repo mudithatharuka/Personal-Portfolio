@@ -37,14 +37,14 @@ const App = () => {
   return (
     <div className="bg-background">
       <BrowserRouter>
-        <Navbar navLinks={navLinks} />
+        <Navbar />
       </BrowserRouter>
-      <Hero profile={profile} />
+      <Hero />
       <div className="gradient-wrapper bg-background clip-path-gradient">
-        <Skills skills={skills} />
-        <Experience experiences={experiences} />
+        <Skills />
+        <Experience />
       </div>
-      <Projects projects={projects} />
+      <Projects />
     </div>
   );
 };
