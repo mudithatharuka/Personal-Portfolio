@@ -355,7 +355,7 @@ const experiences = [
 const projects = [
   {
     name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
+    duration: "Mar 2021 - Jan 2022",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -369,7 +369,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "php",
@@ -377,7 +377,7 @@ const projects = [
       },
       {
         name: "sql",
-        color: "pink-text-gradient",
+        color: "purple-text-gradient",
       },
     ],
     image: TripplinCarRent,
@@ -395,7 +395,7 @@ const projects = [
   },
   {
     name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
+    duration: "Mar 2021 - Jan 2022",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -409,7 +409,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "php",
@@ -417,7 +417,7 @@ const projects = [
       },
       {
         name: "sql",
-        color: "pink-text-gradient",
+        color: "purple-text-gradient",
       },
     ],
     image: TripplinCarRent,
@@ -435,7 +435,7 @@ const projects = [
   },
   {
     name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
+    duration: "Mar 2021 - Jan 2022",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -449,7 +449,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "php",
@@ -457,93 +457,7 @@ const projects = [
       },
       {
         name: "sql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: TripplinCarRent,
-    category: "webapp",
-    source_code_url: "https://github.com/mudithatharuka/TripplinCarRent",
-    live_preview_url: "",
-    members: [
-      {
-        name: "Muditha Batuwangala",
-        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
-        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
-        github: "https://github.com/mudithatharuka",
-      },
-      {
-        name: "Muditha Batuwangala",
-        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
-        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
-        github: "https://github.com/mudithatharuka",
-      },
-    ],
-  },
-  {
-    name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "php",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "sql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: TripplinCarRent,
-    category: "webapp",
-    source_code_url: "https://github.com/mudithatharuka/TripplinCarRent",
-    live_preview_url: "",
-    members: [
-      {
-        name: "Muditha Batuwangala",
-        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
-        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
-        github: "https://github.com/mudithatharuka",
-      },
-    ],
-  },
-  {
-    name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "php",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "sql",
-        color: "pink-text-gradient",
+        color: "purple-text-gradient",
       },
     ],
     image: TripplinCarRent,
@@ -567,7 +481,7 @@ const projects = [
   },
   {
     name: "Tripplin Car Rent",
-    date: "Mar 2021 - Jan 2022",
+    duration: "Mar 2021 - Jan 2022",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -581,7 +495,7 @@ const projects = [
       },
       {
         name: "javascript",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "php",
@@ -589,7 +503,93 @@ const projects = [
       },
       {
         name: "sql",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: TripplinCarRent,
+    category: "webapp",
+    source_code_url: "https://github.com/mudithatharuka/TripplinCarRent",
+    live_preview_url: "",
+    members: [
+      {
+        name: "Muditha Batuwangala",
+        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
+        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
+        github: "https://github.com/mudithatharuka",
+      },
+    ],
+  },
+  {
+    name: "Tripplin Car Rent",
+    duration: "Mar 2021 - Jan 2022",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "php",
         color: "pink-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: TripplinCarRent,
+    category: "webapp",
+    source_code_url: "https://github.com/mudithatharuka/TripplinCarRent",
+    live_preview_url: "",
+    members: [
+      {
+        name: "Muditha Batuwangala",
+        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
+        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
+        github: "https://github.com/mudithatharuka",
+      },
+      {
+        name: "Muditha Batuwangala",
+        img: "https://avatars.githubusercontent.com/u/81775289?v=4",
+        linkedin: "https://www.linkedin.com/in/muditha-batuwangala",
+        github: "https://github.com/mudithatharuka",
+      },
+    ],
+  },
+  {
+    name: "Tripplin Car Rent",
+    duration: "Mar 2021 - Jan 2022",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "php",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "purple-text-gradient",
       },
     ],
     image: TripplinCarRent,
