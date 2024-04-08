@@ -1,4 +1,6 @@
+import { GiComputing } from "react-icons/gi";
 import TripplinCarRent from "../assets/dummyimg.png";
+import WUSLlogo from "../assets/WUSL.jpeg";
 
 const navLinks = [
   {
@@ -607,4 +609,37 @@ const projects = [
   },
 ];
 
-export { navLinks, profile, skills, experiences, projects };
+const education = [
+  {
+    school: "Wayamba University of Sri Lanka",
+    location: "Kuliyapitiya, Sri Lanka",
+    img: WUSLlogo,
+    date: "Jan 2018 - Aug 2023",
+    grade: "3.67 CGPA",
+    desc: "I have completed my B.Sc. (Special) degree in Computer Science at Wayamba University of Sri Lanka, Kuliyapitiya with a CGPA of 3.67 out of 4.0. I have pursued subjects in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Cloud Computing, and AI as some of the main subjects. I was also a member of the IEEE Student Branch of Wayamba University of Sri Lanka in 2022, where I was able to share my knowledge in IT with junior collegues with many workshops. Also I was happy to work as the Student Department Coordinator of the Department of Computing & Information Systems in our batch in 2022.",
+    degree: "B.Sc. (Special) in Computer Science",
+    url: "https://www.wyb.ac.lk/",
+  },
+  {
+    school: "Gurukula College",
+    location: "Kelaniya, Sri Lanka",
+    img: "https://gurukula.schweb.lk/images/logo-final-strock-removed.png",
+    date: "Jun 2014 - Aug 2016",
+    grade: "1 Credit & 2 Ordinary passes",
+    desc: "I have completed my 13th class high-school/secondary education at Gurukula College, Kelaniya, in Physical Science (Mathematics) stream. There I pursued Combined Mathematics, Chemistry, and Physics as my 3 major subjects.",
+    degree: "G.C.E Advanced Level",
+    url: "https://gurukula.schweb.lk/",
+  },
+  {
+    school: "Gurukula College",
+    location: "Kelaniya, Sri Lanka",
+    img: "https://gurukula.schweb.lk/images/logo-final-strock-removed.png",
+    date: "Jan 2012 - Dec 2013",
+    grade: "8 Distinctions & 1 Credit pass",
+    desc: "I have completed my 11th class education at Gurukula College, Kelaniya. There I pursued Business and Accounting Studies, Music, and Media as my 3 bucket subjects apart for the 6 main subjects.",
+    degree: "G.C.E Ordinary Level",
+    url: "https://gurukula.schweb.lk/",
+  },
+];
+
+export { navLinks, profile, skills, experiences, projects, education };
