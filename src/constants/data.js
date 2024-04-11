@@ -627,7 +627,7 @@ const education = [
     date: "Jun 2014 - Aug 2016",
     grade: "1 Credit & 2 Ordinary passes",
     desc: "I have completed my 13th class high-school/secondary education at Gurukula College, Kelaniya, in Physical Science (Mathematics) stream. There I pursued Combined Mathematics, Chemistry, and Physics as my 3 major subjects.",
-    degree: "G.C.E Advanced Level",
+    degree: "G.C.E Advanced Level - Physical Science",
     url: "https://gurukula.schweb.lk/",
   },
   {
