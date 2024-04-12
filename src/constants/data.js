@@ -612,17 +612,17 @@ const projects = [
 const education = [
   {
     school: "Wayamba University of Sri Lanka",
-    location: "Kuliyapitiya, Sri Lanka",
-    img: WUSLlogo,
+    location: "Kuliyapitiya, LK",
+    img: "https://www.wyb.ac.lk/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-180x180.png",
     date: "Jan 2018 - Aug 2023",
-    grade: "3.67 CGPA",
+    grade: "Second Class (Upper Division) Honours | CGPA: 3.67 out of 4.0",
     desc: "I have completed my B.Sc. (Special) degree in Computer Science at Wayamba University of Sri Lanka, Kuliyapitiya with a CGPA of 3.67 out of 4.0. I have pursued subjects in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Cloud Computing, and AI as some of the main subjects. I was also a member of the IEEE Student Branch of Wayamba University of Sri Lanka in 2022, where I was able to share my knowledge in IT with junior collegues with many workshops. Also I was happy to work as the Student Department Coordinator of the Department of Computing & Information Systems in our batch in 2022.",
     degree: "B.Sc. (Special) in Computer Science",
     url: "https://www.wyb.ac.lk/",
   },
   {
     school: "Gurukula College",
-    location: "Kelaniya, Sri Lanka",
+    location: "Kelaniya, LK",
     img: "https://gurukula.schweb.lk/images/logo-final-strock-removed.png",
     date: "Jun 2014 - Aug 2016",
     grade: "1 Credit & 2 Ordinary passes",
@@ -632,7 +632,7 @@ const education = [
   },
   {
     school: "Gurukula College",
-    location: "Kelaniya, Sri Lanka",
+    location: "Kelaniya, LK",
     img: "https://gurukula.schweb.lk/images/logo-final-strock-removed.png",
     date: "Jan 2012 - Dec 2013",
     grade: "8 Distinctions & 1 Credit pass",
