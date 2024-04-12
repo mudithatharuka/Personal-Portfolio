@@ -35,23 +35,32 @@ const EducationCard = ({ education }) => {
         </div>
       }
     >
-      <div>
-        <h3 className="font-semibold text-[14px] text-txtPrimary md:text-[18px]">
-          {education?.school}
-        </h3>
+      <div className="px-2">
+        <div className="flex flex-wrap items-center">
+          <h3 className="font-semibold text-[14px] text-txtPrimary md:text-[18px] hover:text-primary duration-300 transition-all">
+            <a href={education?.url} target="_blank">
+              {education?.school}
+            </a>
+          </h3>
+          <h4 className="font-normal text-[11px] text-txtSecondary md:text-[13px]">
+            &nbsp;|&nbsp;{education?.location}
+          </h4>
+        </div>
         <h4 className="font-medium text-[12px] text-txtSecondary md:text-[14px]">
           {education?.degree}
         </h4>
-        {/* <h4 className="font-normal text-[11px] text-txtSecondary md:text-[13px]">
-          {education?.location}
-        </h4> */}
         <h4
           className={`font-normal text-[10px] text-txtSecondary md:text-[12px]`}
         >
           {education?.date}
         </h4>
       </div>
-      <p>{education.desc}</p>
+      <h3 className="px-2 mt-4 tracking-wide font-normal text-txtPrimary text-[12px] md:text-[14px]">
+        {education?.desc}
+      </h3>
+      <h3 className="px-2 mt-2 font-normal text-txtSecondary text-[12px] md:text-[14px]">
+        Grade:&nbsp;{education?.grade}.
+      </h3>
     </VerticalTimelineElement>
   );
 };
@@ -67,9 +76,7 @@ const Education = () => {
           </p>
         </motion.div>
 
-        {/* <div className="mr-[11%] md:ml-[7.5%] md:mr-[14.5%]"> */}
-        <div className="ml-[11%] md:mr-[7.5%] md:ml-[14.5%]">
-          {/* <div className="mx-[8%] md:mx-[14.5%]"> */}
+        <div className="ml-[12%] md:mr-[6%] md:ml-[15%]">
           <VerticalTimeline layout="1-column-right">
             {education?.map((education, index) => (
               <EducationCard key={`education-${index}`} education={education} />
