@@ -16,7 +16,7 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
           <p className={`${styles.sectionSubText}`}>Get in touch with me.</p>
         </motion.div>
-        <motion.div>
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
           <EarthCanvas />
         </motion.div>
       </div>
