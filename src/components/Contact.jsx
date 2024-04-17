@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
+import EarthCanvas from "./canvas/Earth";
 
 const Contact = () => {
   return (
@@ -14,6 +15,9 @@ const Contact = () => {
         >
           <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
           <p className={`${styles.sectionSubText}`}>Get in touch with me.</p>
+        </motion.div>
+        <motion.div>
+          <EarthCanvas />
         </motion.div>
       </div>
     </div>
