@@ -17,12 +17,12 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
           <p className={`${styles.sectionSubText}`}>Get in touch with me.</p>
         </motion.div>
-        <div className="flex flex-col-reverse md:flex-row md:gap-8 overflow-hidden justify-center my-[30px]">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-8 overflow-hidden justify-center my-[30px]">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="p-8 flex-[0.75] rounded-2xl bg-cardBackground1"
+            className="p-8 rounded-2xl bg-cardBackground1 min-w-[500px]"
           >
-            <form ref={formRef} className="my-5 flex flex-col gap-8 max-w-lg">
+            <form ref={formRef} className="my-5 flex flex-col gap-8">
               <h3 className="text-6 mb-[6px] font-semibold text-txtPrimary">
                 Email Me 🚀
               </h3>
@@ -65,10 +65,7 @@ const Contact = () => {
               </label>
             </form>
           </motion.div>
-          <motion.div
-            variants={slideIn("right", "tween", 0.2, 1)}
-            className="pb-5"
-          >
+          <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
             <EarthCanvas />
           </motion.div>
         </div>
