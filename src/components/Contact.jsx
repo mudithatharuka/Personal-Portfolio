@@ -19,6 +19,53 @@ const Contact = () => {
         </motion.div>
         <div className="flex flex-col-reverse md:flex-row md:gap-8 overflow-hidden justify-center my-[30px]">
           <motion.div
+            variants={slideIn("left", "tween", 0.2, 1)}
+            className="p-8 flex-[0.75] rounded-2xl bg-cardBackground1"
+          >
+            <form ref={formRef} className="my-5 flex flex-col gap-8 max-w-lg">
+              <h3 className="text-6 mb-[6px] font-semibold text-txtPrimary">
+                Email Me 🚀
+              </h3>
+              <label className="flex flex-col">
+                <span className="font-medium text-txtPrimary text-[14px] md:text-[16px] mb-4">
+                  Your Name
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  placeholder="What's your name?"
+                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                />
+              </label>
+              <label className="flex flex-col">
+                <span className="font-medium text-txtPrimary text-[14px] md:text-[16px] mb-4">
+                  Your Email
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  value={form.name}
+                  placeholder="What's your name?"
+                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                />
+              </label>
+              <label className="flex flex-col">
+                <span className="font-medium text-txtPrimary text-[14px] md:text-[16px] mb-4">
+                  Your Message
+                </span>
+                <textarea
+                  aria-expanded={false}
+                  rows={7}
+                  name="message"
+                  value={form.name}
+                  placeholder="What's your name?"
+                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                />
+              </label>
+            </form>
+          </motion.div>
+          <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
             className="pb-5"
           >
