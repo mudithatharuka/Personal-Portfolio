@@ -17,12 +17,12 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
           <p className={`${styles.sectionSubText}`}>Get in touch with me.</p>
         </motion.div>
-        <div className="flex flex-col-reverse lg:flex-row lg:gap-8 overflow-hidden justify-center my-[30px]">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-8 overflow-hidden justify-center py-[30px]">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="p-8 rounded-2xl bg-cardBackground1 min-w-[500px]"
+            className="p-8 rounded-2xl bg-cardBackground1 min-w-[470px] shadow-[rgba(0,0,0,0.4)_0px_4px_15px]"
           >
-            <form ref={formRef} className="my-5 flex flex-col gap-8">
+            <form ref={formRef} className="my-4 flex flex-col gap-6">
               <h3 className="text-6 mb-[6px] font-semibold text-txtPrimary">
                 Email Me 🚀
               </h3>
@@ -56,11 +56,11 @@ const Contact = () => {
                 </span>
                 <textarea
                   aria-expanded={false}
-                  rows={7}
+                  rows={5}
                   name="message"
                   value={form.name}
                   placeholder="What's your name?"
-                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                  className="resize-none bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
               </label>
             </form>
