@@ -10,6 +10,14 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
   return (
     <div className={`${styles.paddingX} ${styles.paddingY} w-full mx-auto`}>
       <div className="max-w-7xl mx-auto">
@@ -34,6 +42,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   value={form.name}
+                  onChange={handleChange}
                   placeholder="What's your name?"
                   className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
@@ -45,7 +54,8 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  value={form.name}
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="What's your name?"
                   className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
@@ -58,7 +68,8 @@ const Contact = () => {
                   aria-expanded={false}
                   rows={5}
                   name="message"
-                  value={form.name}
+                  value={form.message}
+                  onChange={handleChange}
                   placeholder="What's your name?"
                   className="resize-none bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
