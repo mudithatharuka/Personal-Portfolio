@@ -63,6 +63,13 @@ const Contact = () => {
                   className="resize-none bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
               </label>
+
+              <button
+                type="submit"
+                className={`${styles.padding} button-gradient btn-gradient mt-2 w-[100%] text-center text-white rounded-lg cursor-pointer font-semibold text-[14px] md:text-[16px]`}
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
             </form>
           </motion.div>
           <motion.div
