@@ -24,6 +24,7 @@ export default {
         card: "rgba(var(--card))",
         cardBackground1: "rgba(var(--cardBackground1))",
         cardBackground2: "rgba(var(--cardBackground2))",
+        inputBackground1: "rgba(var(--inputBackground1))",
         boxShadow1: "rgba(var(--boxShadow1))",
         boxShadow2: "rgba(var(--boxShadow2))",
         boxShadow3: "rgba(var(--boxShadow3))",

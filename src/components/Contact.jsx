@@ -31,7 +31,7 @@ const Contact = () => {
             className="p-8 rounded-2xl bg-cardBackground1 min-w-[470px] shadow-[rgba(0,0,0,0.4)_0px_4px_15px]"
           >
             <form ref={formRef} className="my-4 flex flex-col gap-6">
-              <h3 className="text-6 mb-[6px] font-semibold text-txtPrimary">
+              <h3 className="text-[16px] md:text-[18px] mb-[6px] font-semibold text-txtPrimary">
                 Email Me 🚀
               </h3>
               <label className="flex flex-col">
@@ -44,7 +44,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your name?"
-                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                  className="bg-inputBackground1 py-4 px-6 placeholder:text-txtTertiary text-txtSecondary rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
               </label>
               <label className="flex flex-col">
@@ -57,7 +57,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your name?"
-                  className="bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                  className="bg-inputBackground1 py-4 px-6 placeholder:text-txtTertiary text-txtSecondary rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
               </label>
               <label className="flex flex-col">
@@ -71,10 +71,9 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What's your name?"
-                  className="resize-none bg-altBackground py-4 px-6 placeholder:text-txtTertiary text-txtMain rounded-lg outline-none border-none text-[14px] md:text-[16px]"
+                  className="resize-none bg-inputBackground1 py-4 px-6 placeholder:text-txtTertiary text-txtSecondary rounded-lg outline-none border-none text-[14px] md:text-[16px]"
                 />
               </label>
-
               <button
                 type="submit"
                 className={`${styles.padding} button-gradient btn-gradient mt-2 w-[100%] text-center text-white rounded-lg cursor-pointer font-semibold text-[14px] md:text-[16px]`}
