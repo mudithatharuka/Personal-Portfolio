@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { slideIn, textVariant } from "../utils/motion";
+import emailjs from "@emailjs/browser";
 import EarthCanvas from "./canvas/Earth";
 
 const Contact = () => {
@@ -16,6 +17,41 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_SERVICE_ID,
+        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Muditha",
+          from_email: form.email,
+          to_email: "mudithatharuka@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -77,6 +113,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className={`${styles.padding} button-gradient btn-gradient mt-2 w-[100%] text-center text-white rounded-lg cursor-pointer font-semibold text-[14px] md:text-[16px]`}
+                onClick={handleSubmit}
               >
                 {loading ? "Sending..." : "Send"}
               </button>
