@@ -5,6 +5,8 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import { slideIn, textVariant } from "../utils/motion";
 import emailjs from "@emailjs/browser";
 import EarthCanvas from "./canvas/Earth";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const formRef = useRef();
