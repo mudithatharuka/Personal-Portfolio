@@ -13,6 +13,55 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
+  const handleNotify = (status, message) => {
+    if (status == "Success") {
+      toast.success(message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        className: "notif",
+      });
+    } else if (status == "Error") {
+      toast.error(message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else if (status == "Warning") {
+      toast.warn("Something Happened!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      toast.info("Info Notification!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({
@@ -23,37 +72,50 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_SERVICE_ID,
-        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Muditha",
-          from_email: form.email,
-          to_email: "mudithatharuka@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+    if (form.name === undefined || form.name === "") {
+      handleNotify("Error", "Please define Your Name!");
+    } else if (form.email === undefined || form.email === "") {
+      handleNotify("Error", "Please define Your Email!");
+    } else if (form.message === undefined || form.message === "") {
+      handleNotify("Error", "Please write Your Message!");
+    } else {
+      setLoading(true);
+      emailjs
+        .send(
+          "service_zr1hs8s",
+          "template_pzbb2x9",
+          {
+            from_name: form.name,
+            to_name: "Muditha",
+            from_email: form.email,
+            to_email: "mudithatharuka@gmail.com",
+            message: form.message,
+          },
+          "7LPudeGeudHWbAzhm"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            handleNotify(
+              "Success",
+              "Thank you! I will get back to you as soon as possible."
+            );
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+            handleNotify(
+              "Error",
+              "Ahh, something went wrong! Please try again."
+            );
+          }
+        );
+    }
   };
 
   return (
@@ -63,6 +125,7 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
           <p className={`${styles.sectionSubText}`}>Get in touch with me.</p>
         </motion.div>
+        <ToastContainer toastStyle={{ top: "80px" }} />
         <div className="flex flex-col-reverse lg:flex-row lg:gap-8 overflow-hidden justify-center py-[30px]">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
