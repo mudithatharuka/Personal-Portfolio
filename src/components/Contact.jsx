@@ -94,8 +94,8 @@ const Contact = () => {
       setLoading(true);
       emailjs
         .send(
-          "service_zr1hs8s",
-          "template_pzbb2x9",
+          import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_SERVICE_ID,
+          import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_TEMPLATE_ID,
           {
             from_name: form.name,
             to_name: "Muditha",
@@ -103,7 +103,7 @@ const Contact = () => {
             to_email: "mudithatharuka@gmail.com",
             message: form.message,
           },
-          "7LPudeGeudHWbAzhm"
+          import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_PUBLIC_KEY
         )
         .then(
           () => {
