@@ -70,12 +70,24 @@ const Contact = () => {
     });
   };
 
+  let handleEmailValidation = (email) => {
+    let re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(email)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (form.name === undefined || form.name === "") {
       handleNotify("Error", "Please define Your Name!");
     } else if (form.email === undefined || form.email === "") {
       handleNotify("Error", "Please define Your Email!");
+    } else if (!handleEmailValidation(form.email)) {
+      handleNotify("Error", "Please enter a valid email address!");
     } else if (form.message === undefined || form.message === "") {
       handleNotify("Error", "Please write Your Message!");
     } else {
