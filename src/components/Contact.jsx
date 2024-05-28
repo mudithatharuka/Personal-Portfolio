@@ -100,7 +100,7 @@ const Contact = () => {
             from_name: form.name,
             to_name: "Muditha",
             from_email: form.email,
-            to_email: "mudithatharuka@gmail.com",
+            to_email: "mudithabatuwangala@gmail.com",
             message: form.message,
           },
           import.meta.env.PERSONAL_PORTFOLIO_EMAILJS_PUBLIC_KEY
