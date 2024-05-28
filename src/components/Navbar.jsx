@@ -38,7 +38,12 @@ const Navbar = () => {
                 setActive(navItem.title);
               }}
             >
-              <a href={`#${navItem.id}`}>{navItem.title}</a>
+              <a
+                href={navItem?.id ? `#${navItem.id}` : navItem.url}
+                target={navItem?.id ? "_self" : "_blank"}
+              >
+                {navItem.title}
+              </a>
             </li>
           ))}
         </ul>
