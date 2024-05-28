@@ -27,6 +27,7 @@ const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  { url: "https://mudithabatuwangala.medium.com", title: "Blog" },
 ];
 
 const profile = {
