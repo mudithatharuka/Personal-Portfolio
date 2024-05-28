@@ -15,7 +15,7 @@
 
 @layer components {
   .btn-gradient {
-    @apply transition-all duration-[0.2s] ease-[ease-in-out] shadow-[20px_20px_60px_#1F2634,-20px_-20px_60px_#1F2634] hover:transition-all hover:duration-[0.4s] hover:ease-[ease-in-out] hover:shadow-[20px_20px_60px_#1F2634,] hover:brightness-100 hover:scale-105;
+    @apply transition-all duration-[0.2s] ease-[ease-in-out] shadow-[20px_20px_60px_#1F2634,-20px_-20px_60px_#1F2634] hover:transition-all hover:duration-[0.4s] hover:ease-[ease-in-out] hover:shadow-[20px_20px_60px_#1F2634,] hover:brightness-100 hover:scale-95;
   }
 }
 

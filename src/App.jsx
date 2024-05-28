@@ -13,6 +13,9 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => {
   useEffect(() => {
@@ -45,6 +48,13 @@ const App = () => {
         <Experience />
       </div>
       <Projects />
+      <div className="gradient-wrapper bg-background clip-path-gradient">
+        <Education />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
     </div>
   );
 };
