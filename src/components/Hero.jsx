@@ -3,7 +3,7 @@ import HeroBgAnimation from "./HeroBgAnimation";
 import { styles } from "../styles";
 import { profile } from "../constants/data";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../assets/New.png";
+import HeroImg from "../assets/CHE_6324.jpg";
 import { motion } from "framer-motion";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
